@@ -10,6 +10,5 @@ CREATE TABLE users (
   PRIMARY KEY (id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-CREATE USER IF NOT EXISTS 'lamp_user'@'%';
-SET PASSWORD FOR 'lamp_user'@'%' = 'lamp_password';
-GRANT ALL PRIVILEGES ON lamp_db.* TO 'lamp_user'@'%';
+CREATE USER IF NOT EXISTS 'usuariolamp'@'%' IDENTIFIED BY 'usuariolamp';
+GRANT ALL PRIVILEGES ON lamp_db.* TO 'usuariolamp'@'%';
